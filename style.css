@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Damion");
+* {
+  font-family: "Damion", cursive;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #292929;
+  overflow: hidden;
+}
+
+.box {
+  width: 4000px;
+  height: 4000px;
+  background: #434343;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: -15%;
+  top: -26%;
+  bottom: 0;
+  box-shadow: 10px 10px 0 0 #1c1c1c, -10px -10px 0 0 #434343, 80px 80px 250px 0 #1c1c1c;
+  border: 200px solid #2e2e2e;
+  transition: all 200ms cubic-bezier(0.25, 0.75, 0.5, 1);
+  transform: translateX(-25%) scale(0.05);
+  -webkit-animation: zoom 10s infinite cubic-bezier(0.19, 1, 0.22, 1);
+          animation: zoom 10s infinite cubic-bezier(0.19, 1, 0.22, 1);
+}
+.box .scope {
+  position: absolute;
+  margin: auto;
+  left: calc(-25% - 300px);
+  top: calc(-25% - 300px);
+  width: 6000px;
+  height: 6000px;
+  background: rgba(129, 236, 236, 0.4);
+  border-radius: 50%;
+  border: 300px solid #000;
+  box-shadow: 0 0 0 400px #fff;
+  z-index: 1;
+  -webkit-animation: rotate 10s infinite cubic-bezier(0.19, 1, 0.22, 1);
+          animation: rotate 10s infinite cubic-bezier(0.19, 1, 0.22, 1);
+  transform: rotate(100deg);
+  transform-origin: 50% -80%;
+  opacity: 1;
+}
+.box .scope:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -5300px;
+  width: 3000px;
+  height: 5000px;
+  background: #fff;
+}
+.box .drop {
+  width: 1600px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.box .drop h1 {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+@-webkit-keyframes rotate {
+  0%, 5% {
+    transform: rotate(100deg);
+    opacity: 1;
+  }
+  8% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  80% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  90% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  95%, 100% {
+    transform: rotate(-100deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0%, 5% {
+    transform: rotate(100deg);
+    opacity: 1;
+  }
+  8% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  80% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  90% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  95%, 100% {
+    transform: rotate(-100deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes zoom {
+  0%, 7% {
+    transform: translateX(-25%) scale(0.05);
+    filter: blur(0px);
+  }
+  15% {
+    transform: translateX(-25%) scale(0.4);
+    filter: blur(8px);
+  }
+  20% {
+    transform: translateX(-25%) scale(0.3);
+    filter: blur(5px);
+  }
+  25% {
+    transform: translateX(-25%) scale(0.2);
+    filter: blur(4px);
+  }
+  30% {
+    transform: translateX(-25%) scale(1);
+    filter: blur(6px);
+  }
+  35% {
+    transform: translateX(-25%) scale(1);
+    filter: blur(15px);
+  }
+  40% {
+    transform: translateX(-25%) scale(1);
+    filter: blur(4px);
+  }
+  45% {
+    transform: translateX(-25%) scale(1);
+    filter: blur(4pxpx);
+  }
+  55%, 60% {
+    transform: translateX(-25%) scale(1);
+    filter: blur(0px);
+  }
+  80% {
+    transform: translateX(-25%) scale(0.5);
+    filter: blur(0px);
+  }
+  95%, 100% {
+    transform: translateX(-25%) scale(0.05);
+    filter: blur(0px);
+  }
+}
+@keyframes zoom {
+  0%, 7% {
+    transform: translateX(-25%) scale(0.05);
+    filter: blur(0px);
+  }
+  15% {
+    transform: translateX(-25%) scale(0.4);
+    filter: blur(8px);
+  }
+  20% {
+    transform: translateX(-25%) scale(0.3);
+    filter: blur(5px);
+  }
+  25% {
+    transform: translateX(-25%) scale(0.2);
+    filter: blur(4px);
+  }
+  30% {
+    transform: translateX(-25%) scale(1);
+    filter: blur(6px);
+  }
+  35% {
+    transform: translateX(-25%) scale(1);
+    filter: blur(15px);
+  }
+  40% {
+    transform: translateX(-25%) scale(1);
+    filter: blur(4px);
+  }
+  45% {
+    transform: translateX(-25%) scale(1);
+    filter: blur(4pxpx);
+  }
+  55%, 60% {
+    transform: translateX(-25%) scale(1);
+    filter: blur(0px);
+  }
+  80% {
+    transform: translateX(-25%) scale(0.5);
+    filter: blur(0px);
+  }
+  95%, 100% {
+    transform: translateX(-25%) scale(0.05);
+    filter: blur(0px);
+  }
+}
